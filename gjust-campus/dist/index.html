@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#174c3c">
+<title>Campus Atlas · GJUST, Hisar</title><meta name="description" content="Explore Guru Jambheshwar University of Science and Technology, Hisar, in 3D. Find campus places, walking directions, university services and faculty contacts.">
+<link rel="icon" href="icon.svg"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+</head><body>
+<header><a class="brand" href="#map" aria-label="Campus Atlas home"><img src="icon.svg" alt=""><span><b>Campus Atlas</b><small>GJUST · HISAR</small></span></a>
+<nav aria-label="Main navigation"><button data-page="map" class="active"><i data-i="map"></i><span>Map explorer</span></button><button data-page="faculty"><i data-i="people"></i><span>Faculty directory</span></button><button data-page="guide"><i data-i="book"></i><span>Campus guide</span></button></nav>
+<span class="localtime"><i data-i="pin"></i> Hisar, Haryana <b id="clock"></b></span></header>
+<main id="mapPage"><aside id="sidebar"><div class="sheet-grip"></div><section id="sideContent"></section></aside>
+<section id="mapStage" aria-label="Interactive campus map"><canvas id="terrain" aria-label="Campus buildings and walkways. Use the place list for keyboard navigation."></canvas><div id="labels"></div>
+<div class="view-tabs"><button id="view3" aria-pressed="true" class="active"><i data-i="cube"></i>3D view</button><button id="view2" aria-pressed="false"><i data-i="layers"></i>2D map</button></div>
+<div class="map-tools"><button id="north" title="Reset map bearing" aria-label="Reset map bearing"><span>N</span><svg viewBox="0 0 32 32"><path d="M16 1 23 28 16 23Z" fill="#b55c42"/><path d="M16 1 9 28 16 23Z" fill="#3f5046"/></svg></button><div class="toolgroup"><button id="plus" aria-label="Zoom in"><i data-i="plus"></i></button><button id="minus" aria-label="Zoom out"><i data-i="minus"></i></button></div><button id="fit" aria-label="Fit campus to screen" title="Fit campus"><i data-i="focus"></i></button></div>
+<button id="env" class="env"><span class="env-icon"><i data-i="sunset"></i></span><span><small>Time & atmosphere</small><strong id="envText">Golden hour</strong></span><i data-i="sliders"></i></button>
+<div id="mapCredit"><span id="scale"></span><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a></div>
+<button id="mobileExplore"><i data-i="search"></i>Explore campus</button></section></main>
+<main id="otherPage" hidden></main><dialog id="settings"><div class="dlg-inner"></div></dialog><div id="toast" role="status" hidden></div>
+<script src="data/map.js"></script><script src="data/places.js"></script><script src="data/directory.js"></script><script src="icons.js"></script><script src="atlas.js"></script><script src="app.js"></script></body></html>
